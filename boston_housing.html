@@ -12270,7 +12270,8 @@ Ensure that you have executed the code block once you are done. You'll know the 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Cross-validation is the method of evaluating and comparing learning algorithms by dividing data into two segments: one used to train and the other used to validate the model. It's useful for grid-search because it's necessary to measure the models ran through the algorithm, specially to evalute if the data is being over or underfitted by evaluating the error in the test and cross-validation sets.</p>
+<p>Cross validation is an iterative process where train/test sets are randomly generated multiples times in order to evaluate the algorithm at each split, the results are then averaged over the splits. When a dataset is limited in size cross validation becomes extremely useful as it allows for an extensive exploitation of available data allowing assessing the real potential of our algorithm in terms of performance metrics.</p>
+<p>It's useful for grid-search because it's necessary to measure the models ran through the algorithm, specially to evalute if the data is being over or underfitted by evaluating the error in the test and cross-validation sets.</p>
 
 </div>
 </div>
@@ -13999,7 +14000,7 @@ Si+SXQghhNKLZBdCCKH0ItmFEEIovUh2IYQQSi+SXQghhNL7H5ckMI6JxZHnAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The best selling price for my client's home is 21.630, perhaps a little too close to the mean and the median.</p>
+<p>The best selling price for my client's home is 21.630, perhaps a little too close to the mean and the median, this could be an issue because it may be that we are just overfitting the data, that we're just expressing what we already knew (please not that I wrote "it may be", I'm not saying that I believe it'd be always like that), so given that we tuned the dataset using the test set I'd have the whole thing in mind before being too confident, on the other hand being close to the average, and depending the type of house, it'd be hard to go wrong by suggesting this value.</p>
 
 </div>
 </div>
